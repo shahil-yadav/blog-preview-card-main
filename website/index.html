@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Adding custom fonts -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Adding Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "hsl(47, 88%, 63%)",
+              white: "hsl(0, 0%, 100%)",
+              grey: "hsl(0, 0%, 50%)",
+              black: "hsl(0, 0%, 7%)",
+            },
+            dropShadow: {
+              card: "8px 8px 0px #000000",
+            },
+            fontFamily: {
+              figtree: ["Figtree", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-yellow font-figtree">
+    <main class="flex flex-col justify-center items-center h-screen">
+      <section
+        class="bg-white sm:max-w-sm max-w-[320px] p-6 space-y-6 rounded-[20px] border border-black drop-shadow-card"
+      >
+        <img
+          class="object-cover w-full"
+          src="../assets/images/blogimage.png"
+          alt="Blog Image"
+        />
+        <div class="space-y-3">
+          <div class="bg-yellow px-3 py-1 w-fit rounded-[4px]">
+            <span class="font-extrabold text-xs">Learning</span>
+          </div>
+          <time datetime="2023-12-21" class="font-medium text-xs"
+            >Published 21 Dec 2023
+          </time>
+          <h3
+            class="font-extrabold text-xl hover:text-yellow hover:cursor-pointer"
+          >
+            HTML & CSS foundations
+          </h3>
+          <p class="text-grey font-medium">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="flex gap-3 items-center">
+          <img
+            class="w-8 h-8"
+            src="../assets/images/image-avatar.webp"
+            alt="Profile Photo"
+          />
+          <span class="font-extrabold text-sm">Greg Hooper</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="text-center">
+        Challenge by
+        <a
+          class="underline hover:text-white"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="underline hover:text-white"
+          href="https://www.linkedin.com/in/shahilyadav"
+          >Shahil Yadav</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
