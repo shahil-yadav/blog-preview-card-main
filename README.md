@@ -1,9 +1,3 @@
-# Solution to the Frontend mentor challenge
+# This branch is solely responsible for deployment
 
-[Challenge Link](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub)
-
-## Blog Preview Card
-
-Tech Stack : Tailwind CSS + HTML
-
-![Desktop State](design/desktop-design.jpg)
+Check out the main branch for style guides and relevant information
